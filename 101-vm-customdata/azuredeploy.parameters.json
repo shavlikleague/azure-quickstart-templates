@@ -12,7 +12,7 @@
       "value": "echo customData"
     },
     "dnsLabelPrefix": {
-      "value": "doit01"
+      "value": "7f97501e-d4ba-43a4-a91a-0ed96584c5b3"
     },
     "vmSize": {
       "value": "Standard_D2"
