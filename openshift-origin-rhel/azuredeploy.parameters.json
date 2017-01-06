@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"_artifactsLocation": {
-			"value": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/openshift-origin-rhel/"
+			"value": "https://raw.githubusercontent.com/shavlikleague/azure-quickstart-templates/master/openshift-origin-rhel/"
 		},
 		"masterVmSize": {
 			"value": "Standard_DS3_v2"
@@ -15,7 +15,7 @@
 			"value": "centos"
 		},
 		"openshiftMasterHostname": {
-			"value": "changeme"
+			"value": "os-master01"
 		},
 		"openshiftMasterPublicIpDnsLabelPrefix": {
 			"value": "GEN-UNIQUE"
@@ -24,17 +24,23 @@
 			"value": "GEN-UNIQUE"
 		},
 		"nodePrefix": {
-			"value": "changeme"
+			"value": "os-node"
 		},
 		"nodeInstanceCount": {
-			"value": 1
+			"value": 3
 		},
 		"adminUsername": {
-			"value": "changeme"
-		},
-		"adminPassword": {
-			"value": "changeme"
-		},
+                   "type": "string",
+                   "metadata": {
+                     "description": "User name for the OS Master Admin."
+                     }
+                },
+                "adminPassword": {
+                   "type": "securestring",
+                   "metadata": {
+                     "description": "Password for the OS Master Admin."
+                     }
+                },
 		"sshPublicKey": {
 			"value": "GEN-SSH-PUB-KEY"
 		},
