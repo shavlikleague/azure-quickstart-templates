@@ -12,7 +12,7 @@
       "value": "echo customData"
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "doit01"
     },
     "vmSize": {
       "value": "Standard_D2"
